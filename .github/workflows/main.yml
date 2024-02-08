@@ -20,4 +20,3 @@ jobs:
       - name: execution ansible-lint
         uses: actions/checkout@v4
       - run: ansible-lint
-
