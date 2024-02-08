@@ -1,0 +1,22 @@
+name: Test_hosted_runner_02
+
+# push時に実行
+on: push
+
+jobs:
+  test_ansible-lint:
+    # セルフホステッドランナー上で使用
+    runs-on: self-hosted
+    # permissions:
+    #   contents: write
+
+    steps:
+
+      # ansible-lintのバージョンチェック
+      - name: Version check ansible
+        run: ansible-lint --version
+
+      # pushしたコードをリモートリポジトリにfetchし、ブランチ内のymlファイルに対してansible-lintを実行
+      - name: execution ansible-lint
+        uses: actions/checkout@v4
+      - run: ansible-lint
