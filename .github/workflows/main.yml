@@ -16,7 +16,7 @@ jobs:
       - name: Version check ansible
         run: ansible-lint --version
 
-      # pushしたコードをリモートリポジトリにfetchし、ブランチ内のymlファイルに対してansible-lintを実行
+      # pushしたコードをリモートリポジトリにfetchし、ブランチ内のymlファイルに対してansible-lintを実行。
       - name: execution ansible-lint
         uses: actions/checkout@v4
       - run: ansible-lint
