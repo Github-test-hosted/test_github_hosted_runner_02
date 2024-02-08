@@ -1,0 +1,9 @@
+---
+- name: test01
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Echo
+      ansible.builtin.debug:
+        msg: "Hello!"
