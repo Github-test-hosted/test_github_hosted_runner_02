@@ -6,4 +6,4 @@
   tasks:
     - name: Echo
       ansible.builtin.debug:
-        msg: "Hello!!!"
+        msg: "Hello!"
