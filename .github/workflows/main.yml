@@ -17,6 +17,6 @@ jobs:
         run: ansible-lint --version
 
       # pushしたコードをリモートリポジトリにfetchし、ブランチ内のymlファイルに対してansible-lintを実行
-      - name: execution ansible-lint
+      - name: Execution ansible-lint
         uses: actions/checkout@v4
       - run: ansible-lint
