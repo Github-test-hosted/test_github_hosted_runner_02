@@ -2,8 +2,8 @@ name: Test_hosted_runner_02
 
 # push時に実行
 on: 
-  push
-  pull_request
+  - push
+  - pull_request
 
 jobs:
   test_ansible-lint:
