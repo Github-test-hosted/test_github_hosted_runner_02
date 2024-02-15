@@ -9,7 +9,7 @@ jobs:
   test_ansible-lint:
     # セルフホステッドランナー上で使用
     runs-on: self-hosted
-    environment: production
+    # environment: production
     # permissions:
     #   contents: write
 
