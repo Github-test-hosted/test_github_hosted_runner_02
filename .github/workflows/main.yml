@@ -1,12 +1,15 @@
 name: Test_hosted_runner_02
 
 # push時に実行
-on: push
+on:
+  - push
+  - pull_request
 
 jobs:
   test_ansible-lint:
     # セルフホステッドランナー上で使用
     runs-on: self-hosted
+    # environment: production
     # permissions:
     #   contents: write
 
